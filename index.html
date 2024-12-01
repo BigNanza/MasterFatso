@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PokeFatso</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="header">PokeFatso</div>
+
+    <div class="grid-container">
+      <div class="labels"></div>
+      <div class="labels toplabels" id="l1"></div>
+      <div class="labels toplabels" id="l2"></div>
+      <div class="labels toplabels" id="l3"></div>
+      <div class="labels sidelabels" id="l4"></div>
+      <div class="button-grid"><button type="button" id="b1" onclick="openPicker(this.id)"><span class="button-labels" id="bl1">&zwnj;</span></button></div>
+      <div class="button-grid"><button type="button" id="b2" onclick="openPicker(this.id)"><span class="button-labels" id="bl2">&zwnj;</span></button></div>
+      <div class="button-grid"><button type="button" id="b3" onclick="openPicker(this.id)"><span class="button-labels" id="bl3">&zwnj;</span></button></div>
+      <div class="labels sidelabels" id="l5"></button></div>
+      <div class="button-grid"><button type="button" id="b4" onclick="openPicker(this.id)"><span class="button-labels" id="bl4">&zwnj;</span></button></div>
+      <div class="button-grid"><button type="button" id="b5" onclick="openPicker(this.id)"><span class="button-labels" id="bl5">&zwnj;</span></button></div>
+      <div class="button-grid"><button type="button" id="b6" onclick="openPicker(this.id)"><span class="button-labels" id="bl6">&zwnj;</span></button></div>
+      <div class="labels sidelabels" id="l6"></div>
+      <div class="button-grid"><button type="button" id="b7" onclick="openPicker(this.id)"><span class="button-labels" id="bl7">&zwnj;</span></button></div>
+      <div class="button-grid"><button type="button" id="b8" onclick="openPicker(this.id)"><span class="button-labels" id="bl8">&zwnj;</span></button></div>
+      <div class="button-grid"><button type="button" id="b9" onclick="openPicker(this.id)"><span class="button-labels" id="bl9">&zwnj;</span></button></div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modalHeader" id="modal-header">Categories: Steel + Water</div>
+        <span class="close">&times;</span>
+        <div class="input-container">
+          <input type="text" id="poke-picker" placeholder="Pokemon" autocomplete="off" spellcheck="false">
+          <button type="button" id="submit-btn" onclick="submitPokemon()">&#x2713;</button>
+          <ul id="suggestions-list" class="suggestions-list"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="scripts.js"></script>
+</html>
